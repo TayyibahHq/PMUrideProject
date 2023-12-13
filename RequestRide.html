@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Ride</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3f84c9;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: auto;
+        }
+
+        .header {
+            background-color: #3f84c9;
+            color: rgb(14, 13, 13);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .driver-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .driver-name {
+            margin-left: 20px;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: right;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        margin-left:85%;
+        }
+        .home{
+            height:5%;
+            width:5%;
+            margin-left: 90%;
+        }
+
+        #dpdwm{
+            height:10%;
+            width:10%;
+            margin-left: 90%;
+        }
+
+        .btn-primary {
+            color: #0c0c0c;
+            background-color: #eef1f3;
+            border-color: #0d0d0e;
+            
+        }
+        #swt{
+            height:5%;
+            width:5%;
+        }
+
+        table { width: 100%; border-collapse: collapse; } 
+        th, td { border: 1px solid black; padding: 8px; text-align: left; } 
+        th { background-color: #f2f2f2; } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Request a Ride</h1>
+            <form id="dpdwm"> <select id="status" name="status" class="form-control"> 
+            <option value="Student">Student</option></select></form> <br> <img class="home" src="house-vector-icon.jpg"/>
+            
+        </div>
+
+        <div class="content">
+            <form>
+                <label for="pickup">Enter Pickup location:</label>
+                <input type="text" id="pickup" name="pickup" class="form-control"> <br>
+<img id="swt" src="Switch.PNG"/> <br>
+                <label for="dropoff">Enter drop off location:</label>
+                <input type="text" id="dropoff" name="dropoff" class="form-control">
+<br/> <br/> 
+                <div class="driver-card">
+                    <table boarder="2px"> 
+                        <tr><th> Profile Picture</th> 
+                            <th> Driver Name   </th>
+                            <th> Vehicle Type  </th>
+                            <th> Gender </th>
+                            <th> Car Size </th>
+                            <th> Ratings </th> 
+                            <th> Select  </th>
+                        </tr> 
+
+                        <tr><td> <img src="profile.jpeg" alt="Profile Picture" width="100"> </td> 
+                            <td>  Ahmed Solom </td>
+                            <td>  Sedan </td>   
+                            <td>  Male </td> 
+                            <td>  Large </td> 
+                            <td>  4/5 </td> 
+                            <td>  <input type="checkbox"/> </td> 
+                        </tr>  
+
+                        <tr><td> <img src="profile.jpeg" alt="Profile Picture" width="100"> </td> 
+                            <td>  Marco Bottom </td>
+                            <td>  SUV </td>   
+                            <td>  Male </td> 
+                            <td>  Medium </td> 
+                            <td>  3/5 </td> 
+                            <td>  <input type="checkbox"/> </td> 
+                        </tr> 
+
+                        <tr><td> <img src="profile.jpeg" alt="Profile Picture" width="100"> </td> 
+                            <td>  Mariah Maclachalan </td>
+                            <td>  Micro Car </td>   
+                            <td>  Female </td> 
+                            <td>  Small </td> 
+                            <td>  4/5 </td> 
+                            <td>  <input type="checkbox"/> </td> 
+                        </tr> 
+
+                        <tr><td> <img src="profile.jpeg" alt="Profile Picture" width="100"> </td> 
+                            <td>  Valarie Liberty </td>
+                            <td>  Coupes </td>   
+                            <td>  Female </td> 
+                            <td>  Large </td> 
+                            <td>  5/5 </td> 
+                            <td>  <input type="checkbox"/> </td> 
+                        </tr> 
+                </div>
+            </table>
+                
+            </form>
+        </div>
+        <button type="submit" class="btn btn-primary">Request Ride</button>
+    </div>
+</body>
+
+</html>
